@@ -14,9 +14,18 @@ If you are developing a production application, we recommend using TypeScript an
 
 # Configure Tailwind
 
+# FireBase Authentication
+-FireBase setup
+-Deploy app to production
+
+-Crreate signup in user api
+-created redux store
+-validation 
+
 # Features
     -Login/singup page
         -sign in/sinp up form
+            If the form is big use formik library
         -redirect to browse page
     -Browse(After Authentication)
         -Header
