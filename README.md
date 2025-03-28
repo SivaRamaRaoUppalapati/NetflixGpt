@@ -18,9 +18,19 @@ If you are developing a production application, we recommend using TypeScript an
 -FireBase setup
 -Deploy app to production
 
--Crreate signup in user api
--created redux store
--validation 
+-Heading
+-Routing of App
+-Login form
+-Signup form
+-Form validation
+-UseRef Hook
+-Firebase Setup
+-create Signup user account
+-Created Redux store withUserSlice
+-Implement Sign out
+-Add Hardcoded value to constant file
+-Register TMDB API & create an app & get access token
+-Get Data from TMDB bow playing movies list API
 
 # Features
     -Login/singup page
