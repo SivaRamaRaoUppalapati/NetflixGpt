@@ -5,7 +5,7 @@ import { useRef, useState } from "react"
 import {  createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import {  signInWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { BACKGROUND_IMAGE_LOGIN } from "../utils/constant";
 
 
@@ -13,7 +13,7 @@ const Login =()=>{
 
     const[isSigninform ,setSignInform] = useState(true);
     const [errorMessage,seterrMessage] = useState(null);
-    const navigate = useNavigate();
+   // const navigate = useNavigate();
 
     const email = useRef(null);
     const password = useRef(null);
@@ -55,7 +55,7 @@ const Login =()=>{
                 // Signed in 
                 const user = userCredential.user;
                 console.log(user)
-                navigate("/browse")
+                //navigate("/browse")
                 // ...
             })
             .catch((error) => {

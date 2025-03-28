@@ -30,8 +30,9 @@ const Header = () => {
   }
 
   useEffect(()=>{
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe =onAuthStateChanged(auth, (user) => {
       if (user) {
+        console.log("User detected:", user);
         const {uid,email,displayName,photoURL} = user
         dispatch(addUser({uid : uid ,email :email, displayName:displayName,photoURL:photoURL}))
        navigate("/browse")
@@ -43,7 +44,9 @@ const Header = () => {
         navigate("/")
       }
     });
-  },[])
+
+    return ()=> unsubscribe();
+  },[dispatch,navigate]);
 
   return (
     <div className='absolute w-screen px-10 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
