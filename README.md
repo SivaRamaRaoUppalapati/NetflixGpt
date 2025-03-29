@@ -37,6 +37,10 @@ If you are developing a production application, we recommend using TypeScript an
 -Planning for MainContainer & secondaryContainer
 -Fetch Data for Trailer Video
 -Embedded the youtube video
+-Build Secondary Component
+-Build Movie List
+-Build Movie Card
+-TMDB Image CDN URL
 
 
 # Features
