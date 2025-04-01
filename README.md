@@ -41,6 +41,10 @@ If you are developing a production application, we recommend using TypeScript an
 -Build Movie List
 -Build Movie Card
 -TMDB Image CDN URL
+-usePopularMovies Custom Hooks
+-GPT Search Page
+-GPT Search Bar
+-Multi-Language Feature in App
 
 
 # Features

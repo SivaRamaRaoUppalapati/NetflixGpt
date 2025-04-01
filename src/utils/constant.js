@@ -21,3 +21,6 @@ export const SUPPORED_LANGUAGES =[{identifier :"en",name : "English"},
   {identifier :"spanish",name : "Spanish"},
   {identifier :"Telugu",name : "Telugu"}
 ]
+
+
+export const OPENAI_KEY ="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"

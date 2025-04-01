@@ -14,7 +14,9 @@ const MovieList = ({title , movies}) => {
         <div className='flex overflow-x-auto scrollbar-hide whitespace-nowrap'> 
             
             <div className='flex'>
-                {movies.map(movie=>
+                {movies
+                .filter(movie => movie.backdrop_path)
+                .map(movie=>
                     <MovieCard key={movie.id}
                     posterPath={movie?.backdrop_path}/>
                  )}
