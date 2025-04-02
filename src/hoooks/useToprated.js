@@ -13,7 +13,7 @@ const useTopRated =()=>{
       const jsondata = await data.json();
       //console.log(jsondata);
       dispatch(addTopRatedMovies(jsondata.results));
-      console.log(jsondata.results)
+     // console.log(jsondata.results)
     }
   
     useEffect(()=>{

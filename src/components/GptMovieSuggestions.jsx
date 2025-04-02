@@ -5,7 +5,7 @@ import MovieList from './MovieList';
 const GptMovieSuggestions = () => {
  // console.log("render")
   const gpt = useSelector(store=> store.gpt.gptMovie)
-  console.log(gpt)
+  //console.log(gpt)
   
   return (
     <div className='w-screen p-4  bg-black text-white'>

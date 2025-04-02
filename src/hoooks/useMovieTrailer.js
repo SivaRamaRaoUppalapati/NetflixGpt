@@ -6,7 +6,7 @@ import React, { useEffect } from 'react'
 
 const useMovieTrailer =({movieId})=>{
     const dispatch = useDispatch();
-    console.log(movieId)
+    //console.log(movieId)
     const getMovieVideos = async()=>{
     const data =await fetch("https://api.themoviedb.org/3/movie/1125899/videos?language=en-US", options)
     const json =await data.json();

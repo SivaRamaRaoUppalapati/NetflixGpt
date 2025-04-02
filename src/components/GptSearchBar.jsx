@@ -14,7 +14,7 @@ const GptSearchBar = () => {
   const searchMOvieTmdb = async (movie)=>{
     const data = await fetch('https://api.themoviedb.org/3/search/movie?query='+ movie+'&include_adult=false&language=en-US&page=1&region=india', options)
     const json = await data.json();
-    console.log(json.results);
+    //console.log(json.results);
     dispatch(addGptMovie(json.results))
     return json.results;
   }

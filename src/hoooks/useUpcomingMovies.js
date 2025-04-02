@@ -13,7 +13,7 @@ const useUpcomingMovies =()=>{
       const jsondata = await data.json();
       //console.log(jsondata);
       dispatch(addUpcomingMovies(jsondata.results));
-      console.log(jsondata.results)
+      //console.log(jsondata.results)
     }
   
     useEffect(()=>{
